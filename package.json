@@ -1,0 +1,47 @@
+{
+  "name": "vue-nba-logos",
+  "version": "0.1.2",
+  "description": "Vue components for NBA team logos",
+  "license": "ISC",
+  "keywords": [
+    "vue",
+    "icon",
+    "NBA",
+    "logo"
+  ],
+  "files": [
+    "dist",
+    "types",
+    "README.md"
+  ],
+  "main": "./dist/lib/index.js",
+  "module": "./dist/es/index.es.js",
+  "types": "./dist/types/packages/components/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/es/index.es.js",
+      "require": "./dist/lib/index.js"
+    }
+  },
+  "scripts": {
+    "build": "pnpm run build:generate && pnpm run build:build && pnpm run build:types",
+    "build:generate": "ts-node scripts/index.ts",
+    "build:build": "vue-tsc --noEmit && vite build",
+    "build:types": "vue-tsc --declaration --emitDeclarationOnly"
+  },
+  "dependencies": {
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^17.0.42",
+    "@types/svgo": "^2.6.3",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "fs-extra": "^10.1.0",
+    "svgo": "^2.8.0",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vue-tsc": "^0.34.7"
+  }
+}
