@@ -17,7 +17,7 @@
     "declaration": true,
     "declarationDir": "./dist/types"
   },
-  "include": ["scripts/**/*.ts", "packages/**/*.ts", "packages/**/*.vue"],
+  "include": ["packages"],
   "references": [{ "path": "./tsconfig.node.json" }],
   "ts-node": {
     "compilerOptions": {

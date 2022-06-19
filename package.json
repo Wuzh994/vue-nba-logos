@@ -1,6 +1,6 @@
 {
   "name": "vue-nba-logos",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Vue components for NBA team logos",
   "license": "ISC",
   "keywords": [
@@ -11,12 +11,11 @@
   ],
   "files": [
     "dist",
-    "types",
     "README.md"
   ],
   "main": "./dist/lib/index.js",
   "module": "./dist/es/index.es.js",
-  "types": "./dist/types/packages/components/index.d.ts",
+  "types": "./dist/types/components/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/es/index.es.js",
