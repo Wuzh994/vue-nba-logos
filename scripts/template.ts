@@ -33,3 +33,9 @@ export default { install };
 `
 
 export const importTemplate = `import { App } from 'vue';\n`
+
+export const declareTemplateToVue = `declare module '*.vue'{
+  import { defineComponent } from 'vue'
+  const Component: ReturnType<typeof defineComponent>
+  export default Component
+}\n`;
