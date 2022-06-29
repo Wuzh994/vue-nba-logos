@@ -1,7 +1,7 @@
-import path from "path"
+import path from 'path'
 import fse from 'fs-extra'
-import { COMPONENTS_PATH } from "./constants"
-import { importTemplate, installTemplate } from "./template"
+import { COMPONENTS_PATH } from './constants'
+import { importTemplate, installTemplate } from './template'
 
 export const collect = async () => {
   const names = await fse.readdir(COMPONENTS_PATH)

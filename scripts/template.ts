@@ -32,4 +32,4 @@ export { install };
 export default { install };
 `
 
-export const importTemplate = `import { App } from 'vue';\n`
+export const importTemplate = 'import { App } from \'vue\';\n'

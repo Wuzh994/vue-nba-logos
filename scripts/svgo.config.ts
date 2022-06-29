@@ -1,9 +1,9 @@
-import { OptimizeOptions } from "svgo";
+import { OptimizeOptions } from 'svgo'
 
 export default {
   js2svg: {
     indent: 2,
-    pretty: true,
+    pretty: true
   },
   plugins: [
     {
@@ -11,15 +11,15 @@ export default {
       params: {
         overrides: {
           inlineStyles: {
-            onlyMatchedOnce: false,
-          },
+            onlyMatchedOnce: false
+          }
         }
       }
     },
     {
       name: 'convertStyleToAttrs',
       params: {
-        keepImportant: true,
+        keepImportant: true
       }
     },
     {

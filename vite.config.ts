@@ -20,8 +20,7 @@ module.exports = defineConfig({
       output: {
         globals: {
           vue: 'Vue'
-        },
-
+        }
       }
     }
   }

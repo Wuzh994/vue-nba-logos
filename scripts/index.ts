@@ -1,9 +1,9 @@
-import path from "path";
+import path from 'path'
 import fse from 'fs-extra'
-import { fetchLogo } from "./fetchLogo";
-import { svgOptimizer } from "./svgOptimizer";
-import { transformToComponent } from "./generate";
-import { collect } from "./collect";
+import { fetchLogo } from './fetchLogo'
+import { svgOptimizer } from './svgOptimizer'
+import { transformToComponent } from './generate'
+import { collect } from './collect'
 import { TEAM_ID, PKG_PATH } from './constants'
 
 const cleanUp = async () => {

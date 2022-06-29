@@ -1,5 +1,5 @@
-import path from "path"
-import { cwd } from "process"
+import path from 'path'
+import { cwd } from 'process'
 
 export const CWD = cwd()
 export const PKG_PATH = path.join(CWD, 'packages')
@@ -37,5 +37,5 @@ export const TEAM_ID: Record<string, string> = {
   SAS: '1610612759',
   TOR: '1610612761',
   UTA: '1610612762',
-  WAS: '1610612764',
+  WAS: '1610612764'
 }
